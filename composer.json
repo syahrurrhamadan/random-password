@@ -1,0 +1,30 @@
+{
+    "name": "syahrur/random-password",
+    "description": "Generate random password of a given length",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "RandomPassword\\": "src/RandomPassword/"
+        },
+        "files": [
+            "src/RandomPassword/Password.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "syahrur rhamadan",
+            "email": "syahrurdan@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+        "providers": [
+            "RandomPassword\\PasswordServiceProvider"
+        ]
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.8"
+    }
+}
